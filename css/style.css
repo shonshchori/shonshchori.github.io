@@ -397,6 +397,55 @@ body.offcanvas {
       padding-top: 5em;
       padding-bottom: 8em; } }
 
+.colorlib-experience .colorlib-narrow-content .row,
+.colorlib-skills .colorlib-narrow-content .row,
+.colorlib-education .colorlib-narrow-content .row,
+.colorlib-blog .colorlib-narrow-content .row,
+.colorlib-work .colorlib-narrow-content .row,
+.colorlib-about .colorlib-narrow-content .row,
+.colorlib-services .colorlib-narrow-content .row,
+.colorlib-contact .colorlib-narrow-content .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colorlib-experience .colorlib-narrow-content .row .animate-box,
+.colorlib-skills .colorlib-narrow-content .row .animate-box,
+.colorlib-education .colorlib-narrow-content .row .animate-box,
+.colorlib-blog .colorlib-narrow-content .row .animate-box,
+.colorlib-work .colorlib-narrow-content .row .animate-box,
+.colorlib-about .colorlib-narrow-content .row .animate-box,
+.colorlib-services .colorlib-narrow-content .row .animate-box,
+.colorlib-contact .colorlib-narrow-content .row .animate-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.colorlib-experience .colorlib-narrow-content .row .animate-box .services,
+.colorlib-skills .colorlib-narrow-content .row .animate-box .services,
+.colorlib-education .colorlib-narrow-content .row .animate-box .services,
+.colorlib-blog .colorlib-narrow-content .row .animate-box .services,
+.colorlib-work .colorlib-narrow-content .row .animate-box .services,
+.colorlib-about .colorlib-narrow-content .row .animate-box .services,
+.colorlib-services .colorlib-narrow-content .row .animate-box .services,
+.colorlib-contact .colorlib-narrow-content .row .animate-box .services {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.colorlib-experience .colorlib-narrow-content .row .animate-box .services .desc,
+.colorlib-skills .colorlib-narrow-content .row .animate-box .services .desc,
+.colorlib-education .colorlib-narrow-content .row .animate-box .services .desc,
+.colorlib-blog .colorlib-narrow-content .row .animate-box .services .desc,
+.colorlib-work .colorlib-narrow-content .row .animate-box .services .desc,
+.colorlib-about .colorlib-narrow-content .row .animate-box .services .desc,
+.colorlib-services .colorlib-narrow-content .row .animate-box .services .desc,
+.colorlib-contact .colorlib-narrow-content .row .animate-box .services .desc {
+    flex-grow: 1;
+}
+
+
 .author-img {
   background-size: cover;
   background-position: center center;
@@ -614,6 +663,9 @@ body.offcanvas {
   font-size: 16px; }
 
 .services {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
   margin-bottom: 30px;
   padding: 1.5em;
   -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
